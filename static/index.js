@@ -167,7 +167,7 @@ $(document).ready(function(){
 function displayBot() {
 
     //  quando o botão do chatbot for clicado
-    $('.send_button').click(function () {
+    $('chatbox__button').click(function () {
 
         //  alterne (toogle) a janela de chat do chatbot
         $('.chatbox__chat').toggle()
@@ -180,7 +180,7 @@ function displayBot() {
 function askBot() {
 
     //  quando o botão enviar for clicado
-    $("").click(function () {
+    $("#send_button").click(function () {
 
         //  obtenha o texto da caixa de texto no chatbot
         var user_bot_input_text = $("#bot_input_text").val()
@@ -201,7 +201,7 @@ function askBot() {
                 type: 'POST',
 
                 //  escreva a mesma URL escrita no arquivo app.py
-                url: "/predict",
+                url: "/bot-response",
 
                 data: JSON.stringify(chat_input_data),
                 dataType: "json",
