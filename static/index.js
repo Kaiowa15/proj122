@@ -167,7 +167,7 @@ $(document).ready(function(){
 function displayBot() {
 
     //  quando o botão do chatbot for clicado
-    $('chatbox__button').click(function () {
+    $('.chatbox__button').click(function () {
 
         //  alterne (toogle) a janela de chat do chatbot
         $('.chatbox__chat').toggle()
